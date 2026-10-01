@@ -1,5 +1,9 @@
 #include <iostream>
 
+/*
+2 вариант лабораторной работы
+*/
+
 int main() {
 
     int32_t height;
@@ -22,4 +26,5 @@ int main() {
     double square = 0.5 * (height * base);
 
     std::cout << "Triangle area: " << square << std::endl;
+return 0;
 }
