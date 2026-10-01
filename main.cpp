@@ -7,8 +7,8 @@
 
 int main() {
 
-    int32_t height;
-    int32_t base;
+    int64_t height;
+    int64_t base;
 
     std::cout << "Enter the triangle height: ";
     std::cin >> height;
