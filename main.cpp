@@ -2,35 +2,21 @@
 #include <limits>
 
 /*
-2 вариант лабораторной работы
+Вариант 2.
+Написать программу, которая получает на вход 2 целых числа 
+h и a (0 < h,a < 10^8) – высоту и основание треугольника. 
+Рассчитать площадь треугольника.
 */
 
 int main() {
 
     int64_t height;
-    int64_t base;
-
     std::cout << "Enter the triangle height: ";
     std::cin >> height;
-    while (std::cin.fail() || height < 0) {
-        std::cout << "Error: Invalid input! Please enter a valid number.\n";
-        std::cin.clear();
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
-        std::cout << "Enter the triangle height: ";
-        std::cin >> height;
-    }
-
+    int64_t base;
     std::cout << "Enter the triangle base: ";
     std::cin >> base;
-    while (std::cin.fail() || base < 0) {
-        std::cout << "Error: Invalid input! Please enter a valid number.\n";
-        std::cin.clear();
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-
-        std::cout << "Enter the triangle base: ";
-        std::cin >> base;
-    }
     
     double square = 0.5 * (height * base);
 
